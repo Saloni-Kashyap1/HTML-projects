@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>shopping site</title>
+        <style>
+             .shirt-div{
+                width: 210px;
+                display: flex;
+                padding-left: 10px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                box-shadow: 1px 2px 3px black;
+                position: relative;
+                
+             }
+
+              .shirt{
+                width: 200px;
+             }
+
+             .fade:hover,.shirt-div:hover{
+
+                opacity: 1;
+                }
+
+             .discount{
+                position: absolute;
+                background-color: black;
+                color: white;
+                font-family: arial;
+                font-size: 14px;
+                top: 15px;
+                right: 0;
+                padding: 5px;
+             }
+
+                .fade{
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right:0;
+                top: 0px;
+                background-color: rgba(214, 214, 219, 0.614);
+                justify-content: space-evenly;
+                align-items: center;
+                opacity: 0;
+                transition: opacity 0.15s;
+                }
+
+             .buy-button{
+                background-color: #FFA41C;
+                font-family: roboto, arial;
+                font-size: 10px;
+                padding: 6px 12px;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+                 
+                
+                }
+
+              .cart-button{
+                background-color: #FFD814;
+                font-family: roboto, arial;
+                font-size: 10px;
+                padding: 6px 12px;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+                } 
+
+        </style>
+    </head>
+    <body>
+        <div class="shirt-div">
+            <img class="shirt" src="images/shirt.webp">
+            <div class="discount">
+                20% OFF
+            </div>
+            <div class="fade">
+                <a href="https://www.flipkart.com/mildin-men-solid-formal-purple-shirt/p/itmacb55ae804342?pid=SHTG9PS5BRZT9VPG&lid=LSTSHTG9PS5BRZT9VPGYI6IXP&marketplace=FLIPKART&store=clo%2Fash%2Faxc%2Fmmk%2Fbk1&srno=b_1_1&otracker=pp_reco_You%2Bmight%2Bbe%2Binterested%2Bin_1_37.dealCard.OMU_cid%3AS_F_N_clo_ash_axc_mmk_bk1__d_50-100__NONE_ALL%3Bnid%3Aclo_ash_axc_mmk_bk1_%3Bet%3AS%3Beid%3Aclo_ash_axc_mmk_bk1_%3Bmp%3AF%3Bct%3Ad%3Bat%3ADEFAULT%3B&otracker1=pp_reco_PINNED_productRecommendation%2FAugmentSelling_You%2Bmight%2Bbe%2Binterested%2Bin_BANNER_HORIZONTAL_dealCard_cc_1_NA_view-all&fm=organic&iid=en_sKDVPr_PXPPRsYQofKojEXAQABG1Ip6HTr_zvyEGWRCyKVXSNn7FpOsT-Be0VqBa8U80LxueI8hY5oRSQGZ2_Q%3D%3D&ppt=None&ppn=None&ssid=tzflx9r0m80000001710483573363" target=" ">
+                    <button class="buy-button">
+                        Buy now
+                    </button>
+                </a>
+                <button class="cart-button">
+                    Add to cart
+                </button>
+            </div>
+        </div>
+
+    </body>
+</html>
